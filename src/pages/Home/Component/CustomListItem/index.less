@@ -1,0 +1,47 @@
+.custom-Item {
+  &-warpper.ant-list-item {
+    color: #999;
+
+    .custom-icon-time,
+    .custom-icon-delete {
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-origin: content-box;
+    }
+    .custom-icon-time {
+      background-image: url("@/assets/icon/Vector.png");
+      margin-right: 8px;
+    }
+    .custom-icon-delete {
+      margin-right: 20px;
+    }
+    &:hover {
+      color: #213547;
+      .custom-icon-delete {
+        background-image: url("@/assets/icon/del.png");
+      }
+    }
+  }
+  &-title {
+    font-size: 14px;
+    width: 138px;
+    color: #2b4096;
+    text-align: left;
+    display: inline-block; /* 使元素成为块级元素以应用宽度 */
+    white-space: nowrap; /* 防止文本换行 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+    text-overflow: ellipsis; /* 显示省略符号来代表被修剪的文本 */
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-time {
+    display: flex;
+    align-items: center;
+    .custom-icon-sign {
+      margin: 0 8px;
+    }
+  }
+}

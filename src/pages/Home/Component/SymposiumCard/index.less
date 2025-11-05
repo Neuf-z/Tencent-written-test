@@ -1,0 +1,66 @@
+.symposium-card-warpper {
+  width: 330px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  &::after {
+    content: " ";
+    height: 64px;
+    width: 1px;
+    background-color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  .symposium-header {
+    .game,
+    .department {
+      display: inline-block;
+      height: 22px;
+      font-size: 12px;
+      line-height: 22px;
+      margin-right: 8px;
+      padding: 0 10px;
+    }
+    .department {
+      background-color: rgba(230, 232, 242, 1);
+      border-radius: 4px;
+      color: #2b4096;
+    }
+    .game {
+      background-color: #f4d7c3;
+      border-radius: 11px;
+      color: #a85212;
+      &::before {
+        content: "•";
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 1px;
+      }
+    }
+  }
+  .symposium-name {
+    &-title {
+      font-weight: bold;
+    }
+    &-title,
+    &-subtitle {
+      font-size: 14px;
+    }
+
+    .symposium-name-subtitle {
+      color: #2b4096;
+    }
+    .arrow-right {
+      color: #999;
+    }
+  }
+  .symposium-footer {
+    display: flex;
+    width: 100%;
+  }
+}
