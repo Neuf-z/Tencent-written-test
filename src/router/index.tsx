@@ -19,10 +19,6 @@ const routes: RouteObject[] = [
     path: "/home",
     element: <Home />,
   },
-  {
-    path: "/symposium",
-    element: <Symposium />,
-  },
 ];
 
 export default routes;
